@@ -1,24 +1,24 @@
-Financial Dashboard
+# Financial Dashboard
 This is a full-stack web application designed to help users track their income and expenses, visualize financial trends, manage transactions, and export data. 
 It provides an intuitive dashboard interface with interactive charts, a sortable and filterable transaction table, and a secure login system.
-Features
+# Features
 •User Authentication: Secure login interface (mocked for demo with pre-filled credentials).
 •Interactive Dashboard:
- Summary Metrics: Overview of total income, total expenses, and net profit.
- Revenue vs. Expenses Trend: Monthly line chart showing financial performance over time.
- Expense Category Breakdown: Pie chart visualizing spending distribution by category.
+ o Summary Metrics: Overview of total income, total expenses, and net profit.
+ o Revenue vs. Expenses Trend: Monthly line chart showing financial performance over time.
+ o Expense Category Breakdown: Pie chart visualizing spending distribution by category.
 •Transaction Management:
- Add new transactions with description, amount, type, category, date, and status.
- View transactions in a paginated table.
- Sort transactions by various columns (description, amount, type, category, date, status).
+ o Add new transactions with description, amount, type, category, date, and status.
+ o View transactions in a paginated table.
+ o Sort transactions by various columns (description, amount, type, category, date, status).
 •Advanced Filtering & Search:
- Filter transactions by category, type, and status.
- Filter transactions by custom date ranges.
- Search transactions by description or category.
- Filter by amount range (min/max).
+ o Filter transactions by category, type, and status.
+ o Filter transactions by custom date ranges.
+ o Search transactions by description or category.
+ o Filter by amount range (min/max).
 •CSV Export: Configure and export filtered transaction data to a CSV file with selected columns.
 
-Technologies Used
+# Technologies Used
 Frontend
 •React: A JavaScript library for building user interfaces.
 •Material-UI (MUI): A popular React UI framework for beautiful and responsive components.
@@ -37,27 +37,27 @@ Backend
 •Mongoose Paginate V2: For easy pagination of Mongoose queries.
 •CORS: Middleware to enable Cross-Origin Resource Sharing.
 
-Setup Instructions
+# Setup Instructions
 Follow these steps to get the Financial Dashboard running locally on your machine.
-Prerequisites
+Prerequisites: 
 Before you begin, ensure you have the following installed:
 •Node.js & npm (comes with Node.js)
 •MongoDB 
 •Git
 1. Clone the Repository
-Open your terminal or command prompt and clone the project:
+•Open your terminal or command prompt and clone the project:
 git clone https://github.com/swapnalikulkarni24/finance-dashboard.git
 cd finance-dashboard
 2. Environment Variables
 Create a file named .env in the root directory of the project (your-financial-dashboard/).
-# .env (in the root directory)
-# MongoDB Connection URI
-# Replace with your local MongoDB URI or MongoDB Atlas connection string
+.env (in the root directory)
+MongoDB Connection URI
+Replace with your local MongoDB URI or MongoDB Atlas connection string
 MONGODB_URI=mongodb://localhost:27017/financial_dashboard_db
-# Port for the Backend Server (Optional, defaults to 5000 if not set)
+Port for the Backend Server (Optional, defaults to 5000 if not set)
 PORT=5000
-# Base URL for the Frontend to connect to the Backend API
-# For local development, this should match your backend server's address
+Base URL for the Frontend to connect to the Backend API
+For local development, this should match your backend server's address
 REACT_APP_API_BASE_URL=http://localhost:5000/api
 3. MongoDB Data Seeding
 Ensure MongoDB is running.
@@ -91,7 +91,7 @@ Email: progeekak@gmail.com
 Password: Swapnali#24
 •After successful login, you will be redirected to the Dashboard, populated with data for the user associated with ObjectId("68604a8e3da067ed1ca77004").
 
-API Documentation
+# API Documentation
 This provides a comprehensive overview of the RESTful API endpoints for the Financial Dashboard backend application.
 •Base URL
 The base URL for all API endpoints is: http://localhost:5000/api
@@ -327,6 +327,12 @@ o	Click "Show Filters" in the "Analytics Filters" section to reveal date range f
 •	Add Transaction: Click the "Add Transaction" button in the navigation bar to open a modal for adding new entries.
 •	Export CSV: Click the "Export CSV" button to open a modal. Select the columns you wish to include in your CSV file and click "Export CSV" to download.
 
-UI Screenshots
-![Screenshot (195)](https://github.com/user-attachments/assets/fe7ccc81-2776-432c-8043-e1e8fda79bde)
-
+# UI Screenshots
+![Screenshot (188)](https://github.com/user-attachments/assets/db936b9a-26a1-4849-9c58-a28c48cdcef4)
+![Screenshot (189)](https://github.com/user-attachments/assets/2c954587-b770-4718-bb9c-72352f780b0f)
+![Screenshot (190)](https://github.com/user-attachments/assets/1b0a5224-f8b9-42c3-b9bb-ad4bbce7d0b4)
+![Screenshot (191)](https://github.com/user-attachments/assets/9f301d4c-1633-40a9-acff-992f968c3fa4)
+![Screenshot (192)](https://github.com/user-attachments/assets/627eb67b-69d9-469d-851d-f71685647dab)
+![Screenshot (193)](https://github.com/user-attachments/assets/a8ac5b7f-1530-48f7-9f13-4a3639c7fee8)
+![Screenshot (194)](https://github.com/user-attachments/assets/b8fb8ee0-f690-4edb-89e9-77616a0354e6)
+![Screenshot (195)](https://github.com/user-attachments/assets/3fb1f223-8b49-4078-b108-6e9b7cfee6b9)
